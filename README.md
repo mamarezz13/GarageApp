@@ -1,4 +1,26 @@
 # GarageApp — نرم‌افزار مدیریت تعمیرگاه
+## نصب و راه‌اندازی
+
+### پیش‌نیازها
+- ویندوز 10/11
+- .NET 8 SDK
+- Visual Studio 2022
+- workload مناسب: .NET desktop development
+
+### مراحل نصب
+1. مخزن را کلون کنید:
+   ```bash
+   git clone https://github.com/mamarezz13/GarageApp.git
+   ```
+2. پوشه پروژه را باز کنید و فایل `GarageApp.csproj` را در Visual Studio 2022 باز کنید.
+3. اگر NuGet بسته‌ها را به‌صورت خودکار restore نکرد، در Solution Explorer روی پروژه راست‌کلیک کنید و گزینه Restore NuGet Packages را انتخاب کنید.
+4. بسته `Microsoft.Data.Sqlite` به‌صورت خودکار اضافه می‌شود و دیتابیس در اجرا ساخته می‌شود.
+5. با دکمه `F5` یا گزینه Start پروژه را اجرا کنید.
+
+### نکات اجرایی
+- اولین اجرای برنامه، فایلی به نام `garage.db` را کنار فایل اجرایی/پروژه می‌سازد.
+- این پروژه برای ویندوز طراحی شده و از `net8.0-windows` استفاده می‌کند.
+- اگر در زمان build یا run خطایی درباره SDK یا workload دیدید، مطمئن شوید .NET 8 SDK و workload .NET desktop development نصب شده‌اند.
 
 ## اجرا
 1. Windows و .NET 8 SDK و Visual Studio 2022 را نصب کنید.
